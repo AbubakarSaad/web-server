@@ -21,7 +21,7 @@ var middleWare = {
 //app.use(middleWare.requireAuthentication);
 app.use(middleWare.logger);
 app.get('/about',middleWare.requireAuthentication, function(req, res){
-   res.send('About us? We are cool people, who just wants to learn and play at the same time while helping others :)');
+   res.send('About us? We are cool people, who just wants to learn and play at the same time while helping others :D');
 });
 
 app.use(express.static(__dirname + '/public'));
